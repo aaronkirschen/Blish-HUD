@@ -147,7 +147,7 @@ namespace Blish_HUD.Controls {
                                                      MenuItemHeight * sec - VerticalScrollOffset,
                                                      _size.X,
                                                      MenuItemHeight),
-                                       Color.Black * 0.7f);
+                                       Color.FromNonPremultiplied(1,1,1,255) * 0.7f);
             }
         }
 

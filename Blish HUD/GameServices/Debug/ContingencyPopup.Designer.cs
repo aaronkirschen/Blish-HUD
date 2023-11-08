@@ -143,7 +143,7 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Segoe UI Emoji", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(1,1,1);
             this.label2.Location = new System.Drawing.Point(15, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 64);

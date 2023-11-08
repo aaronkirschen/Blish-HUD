@@ -122,7 +122,7 @@ namespace Blish_HUD.Controls {
             }
 
             protected override void Paint(SpriteBatch spriteBatch, Rectangle bounds) {
-                spriteBatch.DrawOnCtrl(this, ContentService.Textures.Pixel, new Rectangle(Point.Zero, _size), Color.Black);
+                spriteBatch.DrawOnCtrl(this, ContentService.Textures.Pixel, new Rectangle(Point.Zero, _size), Color.FromNonPremultiplied(1, 1, 1, 255));
 
                 int index = 0;
                 foreach (string item in _assocDropdown.Items) {

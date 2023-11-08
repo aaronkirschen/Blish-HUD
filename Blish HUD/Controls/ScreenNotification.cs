@@ -164,7 +164,7 @@ namespace Blish_HUD.Controls {
                                          this.Message,
                                          _fontMenomonia36Regular,
                                          bounds.OffsetBy(1, 1),
-                                         Color.Black,
+                                         Color.FromNonPremultiplied(1,1,1,255),
                                          false,
                                          HorizontalAlignment.Center);
 

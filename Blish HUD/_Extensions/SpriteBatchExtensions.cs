@@ -193,7 +193,7 @@ namespace Blish_HUD {
             float absoluteOpacity = ctrl.AbsoluteOpacity();
 
             if (stroke) {
-                var strokePreMultiplied = Color.Black * absoluteOpacity;
+                var strokePreMultiplied = Color.FromNonPremultiplied(1,1,1,255) * absoluteOpacity;
 
                 spriteBatch.DrawString(font, text, textPos.OffsetBy(0,               -strokeDistance), strokePreMultiplied);
                 spriteBatch.DrawString(font, text, textPos.OffsetBy(strokeDistance,  -strokeDistance), strokePreMultiplied);

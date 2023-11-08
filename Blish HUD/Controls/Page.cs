@@ -67,11 +67,11 @@ namespace Blish_HUD.Controls
             if (_text.Length > 0)
             {
                 Rectangle contentArea = new Rectangle(new Point(SHEET_BORDER, SHEET_BORDER), new Point(this.Size.X - (SHEET_BORDER * 2) - FIX_WORDCLIPPING_WIDTH, this.Size.Y - (SHEET_BORDER * 2)));
-                spriteBatch.DrawStringOnCtrl(this, _text, _textFont, contentArea, Color.Black, true, HorizontalAlignment.Left, VerticalAlignment.Top);
+                spriteBatch.DrawStringOnCtrl(this, _text, _textFont, contentArea, Color.FromNonPremultiplied(1,1,1,255), true, HorizontalAlignment.Left, VerticalAlignment.Top);
                 string pageNumber = _pageNumber + "";
                 Point pageNumberSize = (Point)PageNumberFont.MeasureString(pageNumber);
                 Point pageNumberCenter = new Point((this.Size.X - pageNumberSize.X) / 2, this.Size.Y - pageNumberSize.Y - (SHEET_BORDER / 2));
-                spriteBatch.DrawStringOnCtrl(this, pageNumber, PageNumberFont, new Rectangle(pageNumberCenter, pageNumberSize), Color.Black, false, HorizontalAlignment.Left, VerticalAlignment.Top);
+                spriteBatch.DrawStringOnCtrl(this, pageNumber, PageNumberFont, new Rectangle(pageNumberCenter, pageNumberSize), Color.FromNonPremultiplied(1,1,1,255), false, HorizontalAlignment.Left, VerticalAlignment.Top);
             }
         }
     }

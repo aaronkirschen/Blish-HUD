@@ -74,7 +74,7 @@ namespace Blish_HUD.Controls {
             _modifierKeys   = modifierKeys;
             _primaryKey     = primaryKey;
 
-            this.BackgroundColor = Color.Black * 0.3f;
+            this.BackgroundColor = Color.FromNonPremultiplied(1,1,1,255) * 0.3f;
             this.Size            = new Point(_normalizedWindowRegion.Width, _normalizedWindowRegion.Height);
             this.ZIndex          = int.MaxValue - 2;
             this.Visible         = false;
@@ -196,7 +196,7 @@ namespace Blish_HUD.Controls {
         public override void PaintBeforeChildren(SpriteBatch spriteBatch, Rectangle bounds) {
             spriteBatch.DrawOnCtrl(this, _textureWindowTexture, _windowRegion);
 
-            spriteBatch.DrawStringOnCtrl(this, _assignmentDisplayString, Content.DefaultFont16, _hotkeyRegion.OffsetBy(1, 1), Color.Black);
+            spriteBatch.DrawStringOnCtrl(this, _assignmentDisplayString, Content.DefaultFont16, _hotkeyRegion.OffsetBy(1, 1), Color.FromNonPremultiplied(1,1,1,255));
             spriteBatch.DrawStringOnCtrl(this, _assignmentDisplayString, Content.DefaultFont16, _hotkeyRegion,                Color.White);
         }
 

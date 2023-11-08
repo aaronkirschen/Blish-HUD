@@ -90,9 +90,9 @@ namespace Blish_HUD.Controls {
             /// <summary>
             /// Color of text or element shadows.
             ///
-            /// The color is black (#000000).
+            /// The color is nearly black (#010101).
             /// </summary>
-            public static Color Shadow => new Color(0xff000000);
+            public static Color Shadow => new Color(0xff010101);
 
             /// <summary>
             /// Color of warning and alert text.  Also the color of lots of floating text.

@@ -312,7 +312,7 @@ namespace Blish_HUD.Controls {
             // Draw black block for tab bar
             spriteBatch.DrawOnCtrl(this, ContentService.Textures.Pixel,
                                    _layoutTopTabBarBounds,
-                                   Color.Black);
+                                   Color.FromNonPremultiplied(1,1,1,255));
 
             // Draw black fade for tab bar
             spriteBatch.DrawOnCtrl(this, _textureBlackFade, _layoutBottomTabBarBounds);
@@ -334,7 +334,7 @@ namespace Blish_HUD.Controls {
 
                     spriteBatch.DrawOnCtrl(this, _textureTabActive, tabBounds);
                 } else {
-                    spriteBatch.DrawOnCtrl(this, ContentService.Textures.Pixel, new Rectangle(0, tabBounds.Y, TAB_SECTION_WIDTH, tabBounds.Height), Color.Black);
+                    spriteBatch.DrawOnCtrl(this, ContentService.Textures.Pixel, new Rectangle(0, tabBounds.Y, TAB_SECTION_WIDTH, tabBounds.Height), Color.FromNonPremultiplied(1,1,1,255));
                 }
 
                 spriteBatch.DrawOnCtrl(this, tab.Icon,

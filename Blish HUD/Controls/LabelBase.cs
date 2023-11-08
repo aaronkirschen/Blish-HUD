@@ -17,7 +17,7 @@ namespace Blish_HUD.Controls {
         protected bool                _wrapText            = false;
         protected bool                _showShadow          = false;
         protected bool                _strokeText          = false;
-        protected Color               _shadowColor         = Color.Black;
+        protected Color               _shadowColor         = Color.FromNonPremultiplied(1,1,1,255);
         protected bool                _autoSizeWidth       = false;
         protected bool                _autoSizeHeight      = false;
 

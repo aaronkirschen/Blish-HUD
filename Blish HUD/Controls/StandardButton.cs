@@ -66,7 +66,7 @@ namespace Blish_HUD.Controls {
         private Tween _animOut;
 
         public StandardButton() {
-            _textColor           = Color.Black;
+            _textColor           = Color.FromNonPremultiplied(1,1,1,255);
             _horizontalAlignment = HorizontalAlignment.Left;
             _verticalAlignment   = VerticalAlignment.Middle;
 
@@ -177,7 +177,7 @@ namespace Blish_HUD.Controls {
             }
 
             // TODO: Don't set button text color like this
-            _textColor = _enabled ? Color.Black : Color.FromNonPremultiplied(51, 51, 51, 255);
+            _textColor = _enabled ? Color.FromNonPremultiplied(1,1,1,255) : Color.FromNonPremultiplied(51, 51, 51, 255);
             // Button Text
             DrawText(spriteBatch, _layoutTextBounds);
         }

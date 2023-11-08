@@ -280,7 +280,7 @@ namespace Blish_HUD.Controls {
             spriteBatch.DrawOnCtrl(this,
                                    ContentService.Textures.Pixel,
                                    bounds,
-                                   Color.Black * backgroundOpacity);
+                                   Color.FromNonPremultiplied(1,1,1,255) * backgroundOpacity);
 
             int iconSize = this.IconSize == DetailsIconSize.Large
                                ? _size.Y
@@ -300,7 +300,7 @@ namespace Blish_HUD.Controls {
             spriteBatch.DrawOnCtrl(this,
                                    ContentService.Textures.Pixel,
                                    new Rectangle(this.ContentRegion.X - iconOffset, this.ContentRegion.Y, this.ContentRegion.Width + iconOffset, this.ContentRegion.Height),
-                                   Color.Black * 0.1f);
+                                   Color.FromNonPremultiplied(1,1,1,255) * 0.1f);
 
             /*** Handle fill ***/
             if (_maxFill > 0 && _showVignette) {
@@ -382,7 +382,7 @@ namespace Blish_HUD.Controls {
                                                      cornerStart.Y,
                                                      _size.X - cornerStart.X,
                                                      _size.Y - cornerStart.Y),
-                                       Color.Black);
+                                       Color.FromNonPremultiplied(1,1,1,255));
             }
 
             // Draw bottom section seperator

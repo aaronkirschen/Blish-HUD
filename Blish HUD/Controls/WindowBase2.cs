@@ -677,7 +677,7 @@ namespace Blish_HUD.Controls {
         private void PaintSideBar(SpriteBatch spriteBatch) {
             if (this.ShowSideBar) {
                 // Draw solid side bar (top half)
-                spriteBatch.DrawOnCtrl(this, ContentService.Textures.Pixel, this.SidebarActiveBounds, Color.Black);
+                spriteBatch.DrawOnCtrl(this, ContentService.Textures.Pixel, this.SidebarActiveBounds, Color.FromNonPremultiplied(1,1,1,255));
 
                 // Draw faded side bar (bottom half)
                 spriteBatch.DrawOnCtrl(this, _textureBlackFade, _sidebarInactiveDrawBounds);

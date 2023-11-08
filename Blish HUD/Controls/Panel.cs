@@ -314,7 +314,7 @@ namespace Blish_HUD.Controls {
                 spriteBatch.DrawOnCtrl(this,
                                        ContentService.Textures.Pixel,
                                        this.ContentRegion,
-                                       Color.Black * 0.4f);
+                                       Color.FromNonPremultiplied(1,1,1,255) * 0.4f);
             }
 
             if (!string.IsNullOrEmpty(_title)) {
@@ -354,7 +354,7 @@ namespace Blish_HUD.Controls {
 
             if (this.ShowBorder) {
                 // Lightly tint the background of the panel
-                spriteBatch.DrawOnCtrl(this, ContentService.Textures.Pixel, this.ContentRegion, Color.Black * (0.1f * AccentOpacity));
+                spriteBatch.DrawOnCtrl(this, ContentService.Textures.Pixel, this.ContentRegion, Color.FromNonPremultiplied(1,1,1,255) * (0.1f * AccentOpacity));
 
                 // Top left accent
                 spriteBatch.DrawOnCtrl(this,
@@ -381,7 +381,7 @@ namespace Blish_HUD.Controls {
                                        _textureLeftSideAccent,
                                        _layoutLeftAccentBounds,
                                        _layoutLeftAccentSrc,
-                                       Color.Black * AccentOpacity,
+                                       Color.FromNonPremultiplied(1,1,1,255) * AccentOpacity,
                                        0,
                                        Vector2.Zero,
                                        SpriteEffects.FlipVertically);

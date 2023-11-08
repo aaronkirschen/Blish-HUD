@@ -130,7 +130,7 @@ namespace Blish_HUD.Controls {
                                              _keyBinding.GetBindingDisplayText(),
                                              Content.DefaultFont14,
                                              _hotkeyRegion.OffsetBy(1, 1),
-                                             Color.Black,
+                                             Color.FromNonPremultiplied(1,1,1,255),
                                              false,
                                              HorizontalAlignment.Center);
 
